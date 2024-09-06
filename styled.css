@@ -1,0 +1,328 @@
+body {
+    background-image: url(../bg-image/scooter.svg);
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    background-size: 45%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.logo-img {
+    height: 80px;
+}
+
+.header-section {
+    margin: 10px 100px;
+}
+
+.main-section {
+    margin: 10px 100px 50px 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.text-content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 2.5rem;
+}
+
+@media (max-width: 1080px) {
+    body {
+        background-position: center 30%;
+        background-size: 45%;
+    }
+    .header-section {
+        margin: 0px 40px 0px 40px;
+    }
+    .main-section {
+        margin: 0 40px 60px 40px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 420px;
+    }
+    .text-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-position: center 30%;
+        background-size: 45%;
+    }
+    .main-section {
+        gap: 230px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 480px) {
+    body {
+        background-position: center 33%;
+        background-size: 45%;
+    }
+    .heading {
+        font-size: 1.5rem;
+    }
+    .header-section {
+        margin: 10px 20px;
+    }
+    .main-section {
+        margin: 0 20px 60px 20px;
+        gap: 150px;
+    }
+}
+
+.subheading {
+    font-size: 1rem;
+}
+
+.status-info {
+    font-size: 0.7rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(238, 5, 5);
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    max-width: 320px;
+    height: 420px;
+    border: 0px solid gray;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px 15px;
+    gap: 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-heading {
+    font-size: 2rem;
+    margin: 0px;
+}
+
+.input-field input {
+    padding-left: 10px;
+    border: 0;
+    border-radius: 10px;
+    height: 40px;
+    width: 95%;
+    outline: none;
+    background-color: #efefef;
+    align-self: center;
+}
+
+.input-container {
+    flex-grow: 1;
+}
+
+.input-field input::placeholder {
+    color: #ababab;
+}
+
+.agree-checkbox input {
+    width: 15px;
+    height: 15px;
+}
+
+label {
+    font-size: 12px;
+}
+
+.submit-btn input {
+    border: 0px solid green;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #57EEAB;
+    font-size: 1.5rem;
+    font-style: bold;
+}
+
+@media (min-width: 200px) and (max-width: 480px) {
+    .submit-btn input {
+        font-size: 1.2rem;
+        height: 35px;
+    }
+}
+
+.footer-section {
+    background-color: #FFFD8C;
+}
+
+.calculation-container {
+    margin: 10px 100px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 1080px) {
+    .calculation-container {
+        margin: 10px 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 730px) {
+    .calculation-container {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 480px) {
+    .calculation-container {
+        margin: 10px 20px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.social-icon {
+    width: 20px;
+}
+
+.footer-section .earnings-heading,
+.earnings-subheading {
+    font-size: 0.7rem;
+}
+
+.footer-section .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section .input {
+    border: 0;
+    border-radius: 10px;
+    height: 25px;
+    padding-left: 10px;
+    outline: none;
+    background-color: #efefef;
+}
+
+.footer-section .input-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-section .hours-input {
+    width: 80px;
+    height: 25px;
+}
+
+.footer-section .city-input {
+    width: 120px;
+    height: 25px;
+}
+
+.footer-section .input::placeholder {
+    color: #565656;
+}
+
+.footer-section .calculate-btn {
+    width: 140px;
+    background-color: #FF8480;
+    border: 0px;
+    height: 25px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+}
+
+@media (min-width: 200px) and (max-width: 480px) {
+    .footer-section {
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-section .calculate-btn {
+        width: 230px;
+    }
+    .footer-section .input-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-icons {
+        gap: 30px;
+    }
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.icon {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .icon {
+        width: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-container {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .icon {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+}
